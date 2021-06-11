@@ -14,61 +14,7 @@
 
 <body>
     <div id="toast">
-        <!-- Success -->
-        <div class="toast toast--success">
-            <div class="toast__icon">
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="toast__body">
-                <h3 class="toast__title">Success</h3>
-                <p class="toast__msg">May vi tinh</p>
-            </div>
-            <div class="toast__close">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-
-        <!-- Info -->
-        <div class="toast toast--info">
-            <div class="toast__icon">
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="toast__body">
-                <h3 class="toast__title">Success</h3>
-                <p class="toast__msg">May vi tinh</p>
-            </div>
-            <div class="toast__close">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-
-        <!-- Warrning -->
-        <div class="toast toast--warning">
-            <div class="toast__icon">
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="toast__body">
-                <h3 class="toast__title">Success</h3>
-                <p class="toast__msg">May vi tinh</p>
-            </div>
-            <div class="toast__close">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-
-        <!-- Error -->
-        <div class="toast toast--error">
-            <div class="toast__icon">
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="toast__body">
-                <h3 class="toast__title">Success</h3>
-                <p class="toast__msg">May vi tinh</p>
-            </div>
-            <div class="toast__close">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
+        
     </div>
 
     <div>
@@ -128,6 +74,22 @@
                 `;
             main.appendChild(toast);
         }
+    }
+    function showSuccessToast(){
+        toast({
+        title: 'Success',
+        message: 'Ban da dang ky thanh cong',
+        type: 'success',
+        duration: 3000
+    });
+    }
+    function showErrorToast(){
+        toast({
+        title: 'Error',
+        message: 'That bai co loi vui long thu lai',
+        type: 'error',
+        duration: 3000
+    });
     }
 </script>
 
