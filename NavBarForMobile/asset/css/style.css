@@ -45,3 +45,10 @@ body {
 #nav .subnav {
     display: none;
 }
+
+/* Moblie nav */
+.nav__bars-btn{
+    width: 28px;
+    height: 28px;
+    color:red;
+}
