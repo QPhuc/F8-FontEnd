@@ -120,3 +120,54 @@
 .header__qr-link:nth-child(2) {
     margin-right: 12px;
 }
+
+/* Header ntification */
+.header__notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 405px;
+    border: 1px solid #D3D3D3;
+    background-color: var(--white-color);
+}
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item {
+    display: flex;
+}
+
+.header__notify-link {
+    display: flex;
+}
+
+.header__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify-info {
+
+}
+
+.header__notify-name {
+
+}
+
+.header__notify-description {
+
+}
