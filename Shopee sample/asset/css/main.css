@@ -151,8 +151,19 @@
     display: flex;
 }
 
+.header__notify-item:hover {
+    background-color: #F7F7F7;
+}
+
+.header__notify-item--viewed {
+    background-color: rgba(238, 75, 43, 0.08);
+}
+
 .header__notify-link {
     display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
 }
 
 .header__notify-img {
@@ -161,13 +172,30 @@
 }
 
 .header__notify-info {
-
+    margin-left: 12px;
 }
 
 .header__notify-name {
-
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
 }
 
 .header__notify-description {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #756F6E;
+}
 
+.header__notify-footer {
+    text-align: center;
+    display: block;
+}
+
+.header__notify-footer-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 16px 16px;
 }
