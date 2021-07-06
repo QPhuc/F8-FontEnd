@@ -266,8 +266,6 @@
 }
 
 .modal__body {
-    height: 300px;
-    width: 300px;
     background-color: var(--white-color);
     margin: auto;
     position: relative;
