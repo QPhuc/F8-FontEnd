@@ -466,5 +466,21 @@
 }
 
 .header__search-btn {
-    
+    background-color: var(--primary-color);
+    border: none;
+    height: 34px;
+    border-radius: 3px;
+    margin-right: 3px;
+    outline: none;
+}
+
+.header__search-btn:hover {
+    background-color: #ef6449;
+    cursor: pointer;
+}
+
+.header__search-btn-icon {
+    width: 40px;
+    font-size: 1.4rem;
+    color: var(--white-color);
 }
