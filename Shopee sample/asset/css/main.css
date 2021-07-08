@@ -429,8 +429,19 @@
 .header__cart {
     width: 150px;
     text-align: center;
-    position: relative;
 }
+
+.header__cart-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.header__cart-wrap:hover .header__cart-list {
+    display: block;
+}
+
 
 .header__cart-icon {
     color: var(--white-color);
@@ -440,11 +451,23 @@
 .header__cart-list {
     position: absolute;
     top: calc(100% + 9px);
-    right: 50px;
+    right: 1px;
     width: 400px;
     border-radius: 2px;
+    display: none;
     box-shadow: 0 1px 2rem 0 rgba(0, 0, 0, 0.2);
     background-color: var(--white-color);
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__cart-list::after {
+    content: "";
+    position: absolute;
+    right: 3px;
+    top: -26px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
 }
 
 .header__cart-list--no-cart {
