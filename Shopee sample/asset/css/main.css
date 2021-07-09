@@ -34,7 +34,7 @@
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -78,6 +78,10 @@
     height: 8px;
 }
 
+.header__navbar-user-item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .header__navbar-user-item a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -111,7 +115,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size:  1.4rem;
+    font-size:  1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -119,14 +123,14 @@
 
 .header__navbar-item,
 .header__navbar-item-link,
-.header__navba-icon-link {
+.header__navbar-icon-link {
     display: flex;
     align-items: center;
 }
 
 .header__navbar-item:hover,
 .header__navbar-item-link:hover,
-.header__navba-icon-link:hover {
+.header__navbar-icon-link:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7)
 } 
@@ -146,9 +150,13 @@
     transform: translateY(-50%);
 }
 
-.header__navba-icon-link {
+.header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -209,13 +217,15 @@
 /* Header ntification */
 .header__notify {
     position: absolute;
+    z-index: 1;
     top: 118%;
     right: 0;
     width: 405px;
-    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: var(--white-color);
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity, transform;
     display: none;
@@ -492,6 +502,11 @@
     width: 200px;
 }
 
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
 .header__logo-img {
     width: 150px;
 }
@@ -752,7 +767,7 @@
     padding-top: 5px;
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(100% - 2px);
     width: 130px;
     list-style: none;
     padding-left: 0;
