@@ -455,6 +455,7 @@
     width: 400px;
     border-radius: 2px;
     display: none;
+    cursor: default;
     box-shadow: 0 1px 2rem 0 rgba(0, 0, 0, 0.2);
     background-color: var(--white-color);
     animation: fadeIn ease-in 0.2s;
@@ -467,6 +468,7 @@
     top: -26px;
     border-width: 16px 20px;
     border-style: solid;
+    cursor: pointer;
     border-color: transparent transparent var(--white-color) transparent;
 }
 
