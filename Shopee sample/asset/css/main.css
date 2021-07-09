@@ -474,14 +474,23 @@
 
 .header__cart-list--no-cart {
     padding: 24px 0;
+
+}
+
+.header__cart-list--no-cart .header__cart-no-cart-img,
+.header__cart-list--no-cart .header__cart-list-no-cart-msg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .header__cart-no-cart-img {
     width: 55%;
+    display: none;
 }
 
 .header__cart-list-no-cart-msg {
-    display: block;
+    display: none;
     font-size: 1.4rem;
     margin-top: 14px;
     color: var(--text-color);
