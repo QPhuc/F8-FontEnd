@@ -1209,3 +1209,7 @@ i.home-product-item__like-icon-fill {
     color: var(--white-color);
 }
 
+.home-product__pagination {
+    margin: 48px 0 32px;
+}
+
