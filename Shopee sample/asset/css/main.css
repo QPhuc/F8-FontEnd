@@ -47,7 +47,7 @@
     position: absolute;
     z-index: 1;
     padding-left: 0;
-    top: calc(100% + 4px);
+    top: calc(100% + 6px);
     right: 8px;
     width: 160px;
     border-radius: 2px;
@@ -104,7 +104,7 @@
     background-color: #f1efef;
 }
 
-.header__navbar-item--has-qr:hover .header__qr{
+.header__navbar-item--has-qr:hover .header__qr {
     display: block;
 }
 
@@ -182,6 +182,7 @@
     display: none;
     animation: fadeIn ease 0.5s;
     will-change: opacity;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header__qr::before {
@@ -551,6 +552,7 @@
     width: 400px;
     cursor: default;
     display: none;
+    z-index: 1;
     border-radius: 2px;
     animation: fadeIn ease-in 0.2s;
     background-color: var(--white-color);
@@ -568,6 +570,8 @@
 .header__cart-list-item {
     padding: 0;
     list-style: none;
+    max-height: 55vh;
+    overflow-y: auto;
 }
 
 .header__cart-item {
@@ -589,6 +593,7 @@
 .header__cart-item-info {
     width: 100%;
     margin-right: 12px;
+    padding-top: 0;
 }
 
 .header__cart-item-head {
@@ -599,10 +604,19 @@
 }
 
 .header__cart-item-name {
+    flex: 1;
     font-size: 1.4rem;
+    line-height: 2rem;
+    max-height: 4rem;
+    overflow: hidden;
     font-weight: 500;
     margin: 0;
+    text-align: start;
+    padding-right: 16px;
     color: var(--text-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .header__cart-item-price {
@@ -774,6 +788,7 @@
     padding-left: 0;
     border-radius: 3px;
     display: none;
+    z-index: 1;
     box-shadow: 0 1px 2px #E0E0E0;
     animation: fadeIn ease-in 0.2s;
 }
@@ -840,6 +855,7 @@
     box-shadow: 0 1px 5px #999;
     display: none;
     overflow: hidden;
+    z-index: 1;
 }
 
 .header__search-history-heading {
@@ -1018,8 +1034,7 @@
     text-decoration: none;
     position: relative;
     background-color: var(--white-color);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     transition: transform ease-in 0.1s;
     will-change: transform;
@@ -1034,7 +1049,9 @@
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__name {
@@ -1160,6 +1177,7 @@ i.home-product-item__like-icon-fill {
     width: 40px;
     height: 36px;
     text-align: center;
+    border-top-right-radius: 2px;
     background-color: rgba(255, 216, 64, 0.94);
 }
 
